@@ -1,6 +1,10 @@
 # Digital-Image-Processing - Midterm-Homework
 ISIC cilt lezyonu görüntülerine hem RGB (renkli) hem de gri tonlamalı görüntü işleme teknikleri uyguladım
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XDtg6OJkR6YLbwBhGW5SBiFx5eMifROF?usp=sharing)
+
+Dizüstü bilgisayarı Google Colab'da açmak için yukarıdaki simgeye tıklayın.
+
 # 1. Veri Yükleme 
 
 Proje Genel Bakış
