@@ -5,7 +5,7 @@ I applied both RGB (color) and grayscale image processing techniques on ISIC ski
 
 Proje Genel Bakış
 
-Bu proje, 9 farklı cilt lezyonu sınıfı içeren bir cilt kanseri veri setinin analizini içermektedir. Veri seti Kaggle'dan kaynaklanmakta olup, analiz ve işleme için 2.357 tıbbi görüntü içermektedir. Bu raporda sunulan analiz,  "image_400" görseli üzerinden gerçekleştirilmiştir.
+Bu proje, 9 farklı cilt lezyonu sınıfı içeren bir cilt kanseri veri setinin analizini içermektedir. Veri seti Kaggle'dan kaynaklanmakta olup, analiz ve işleme için 2.357 tıbbi görüntü içermektedir.
 
 Veri Seti Bilgileri:
 
@@ -170,6 +170,8 @@ Image 9: Orta ton ağırlıklı; yeşil kanal baskın
 <img width="1388" height="2492" alt="загрузка (38)" src="https://github.com/user-attachments/assets/bd2790d7-4063-48d1-9482-51ec1f03679c" />
 
 # 3. Görüntü İşleme ve İyileştirme
+
+Bu raporda sunulan analiz,  "image_400" görseli üzerinden gerçekleştirilmiştir.
 
 Bu bölümde, görüntü iyileştirme için üç yöntem ele alınmıştır: kontrast germe, histogram eşitleme ve gamma düzeltme. Bu yöntemler, cilt lezyonu görüntülerindeki detayların görünürlüğünü artırmak için hem RGB hem de gri tonlamalı görüntülere uygulanmıştır.
 
