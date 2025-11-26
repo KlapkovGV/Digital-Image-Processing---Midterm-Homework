@@ -35,9 +35,7 @@ Sınıf Dağılımı / Sınıf Adı	Adet
 
 — seborrheic keratosis	/ 80
 
-Teknik Uygulama
-
-# 1.1 Veri Yükleme ve İlk Analiz
+# 1.1. Kütüphanelerin İçe Aktarılması 
 
 Kullanılan Kütüphaneler
 pandas, numpy - Veri manipülasyonu
