@@ -105,13 +105,43 @@ Basal cell carcinoma: 1 görüntü
 
 Her görüntü için RGB ve gri tonlamalı istatistikleri hesaplandı:
 
-Örnek İstatistikler:
+İstatistikler:
 
-Görüntü 1: RGB Mean: 136.74, Grayscale Mean: 133.59
+Image 1: RGB İstatistiksel:Overall - Min: 0, Max: 255, Mean: 136.74, Std: 35.31
 
-Görüntü 2: RGB Mean: 212.60, Grayscale Mean: 211.18
+Image 1: Grayscale İstatistiksel:Overall - Min: 1, Max: 250,Mean: 133.59835555555554, 29.722805066135773
 
-Görüntü 3: RGB Mean: 146.20, Grayscale Mean: 140.99
+Image 2: RGB İstatistiksel:Overall - Min: 18, Max: 253, Mean: 212.60, Std: 37.95
+
+Image 2: Grayscale İstatistiksel:Overall - Min: 21, Max: 240,Mean: 211.18897407407408, 36.5750795030056
+
+Image 3: RGB İstatistiksel:Overall - Min: 51, Max: 211, Mean: 146.20, Std: 33.90
+
+Image 3: Grayscale İstatistiksel:Overall - Min: 82, Max: 182,Mean: 140.99535185185186, 17.21370074125647
+
+Image 4: RGB İstatistiksel:Overall - Min: 0, Max: 255, Mean: 76.48, Std: 42.84
+
+Image 4: Grayscale İstatistiksel:Overall - Min: 13, Max: 254,Mean: 77.17396421845574, 32.505309263275706
+
+Image 5: RGB İstatistiksel:Overall - Min: 26, Max: 255, Mean: 200.15, Std: 33.80
+
+Image 5: Grayscale İstatistiksel:Overall - Min: 71, Max: 255,Mean: 202.76696650187174, 24.06549688041099
+
+Image 6: RGB İstatistiksel:Overall - Min: 0, Max: 255, Mean: 159.72, Std: 37.97
+
+Image 6: Grayscale İstatistiksel:Overall - Min: 0, Max: 255,Mean: 159.46745790381246, 34.05493528401974
+
+Image 7: RGB İstatistiksel:Overall - Min: 0, Max: 255, Mean: 162.08, Std: 45.65
+
+Image 7: Grayscale İstatistiksel:Overall - Min: 0, Max: 255,Mean: 152.78467399600476, 26.693659150726997
+
+Image 8: RGB İstatistiksel:Overall - Min: 81, Max: 248, Mean: 190.73, Std: 28.16
+
+Image 8: Grayscale İstatistiksel:Overall - Min: 103, Max: 220,Mean: 187.20162592592592, 11.115700722021536
+
+Image 9: RGB İstatistiksel:Overall - Min: 10, Max: 247, Mean: 125.50, Std: 24.46
+
+Image 9: Grayscale İstatistiksel:Overall - Min: 13, Max: 233,Mean: 128.43947219848633, 17.16719906729315
 
 # 2.3. Histogram Çizimi (RGB + Grayscale)
 
