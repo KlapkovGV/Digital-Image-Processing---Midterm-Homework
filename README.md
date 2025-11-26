@@ -1,5 +1,5 @@
 # Digital-Image-Processing - Midterm-Homework
-I applied both RGB (color) and grayscale image processing techniques on ISIC skin lesion images
+ISIC cilt lezyonu görüntülerine hem RGB (renkli) hem de gri tonlamalı görüntü işleme teknikleri uyguladım
 
 # 1. Veri Yükleme 
 
