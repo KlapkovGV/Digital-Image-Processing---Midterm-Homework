@@ -5,7 +5,7 @@ I applied both RGB (color) and grayscale image processing techniques on ISIC ski
 
 Proje Genel Bakış
 
-Bu proje, 9 farklı cilt lezyonu sınıfı içeren bir cilt kanseri veri setinin analizini içermektedir. Veri seti Kaggle'dan kaynaklanmakta olup, analiz ve işleme için 2.357 tıbbi görüntü içermektedir.
+Bu proje, 9 farklı cilt lezyonu sınıfı içeren bir cilt kanseri veri setinin analizini içermektedir. Veri seti Kaggle'dan kaynaklanmakta olup, analiz ve işleme için 2.357 tıbbi görüntü içermektedir. Bu raporda sunulan analiz,  "image_400" görseli üzerinden gerçekleştirilmiştir.
 
 Veri Seti Bilgileri:
 
