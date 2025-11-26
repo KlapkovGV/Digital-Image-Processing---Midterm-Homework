@@ -1,7 +1,7 @@
 # Digital-Image-Processing - Midterm-Homework
 I applied both RGB (color) and grayscale image processing techniques on ISIC skin lesion images
 
-Cilt Kanseri Görüntü Analizi Raporu
+# 1. Veri Yükleme 
 
 Proje Genel Bakış
 
@@ -37,7 +37,7 @@ Sınıf Dağılımı / Sınıf Adı	Adet
 
 Teknik Uygulama
 
-1.1 Veri Yükleme ve İlk Analiz
+# 1.1 Veri Yükleme ve İlk Analiz
 
 Kullanılan Kütüphaneler
 pandas, numpy - Veri manipülasyonu
@@ -50,7 +50,7 @@ pathlib, os - Dosya sistemi operasyonları
 
 kagglehub - Veri seti indirme
 
-1.2. Veri Setinin Yüklenmesi
+# 1.2. Veri Setinin Yüklenmesi
 Veri seti başarıyla indirildi ve aşağıdaki yapıya sahip bir pandas DataFrame'e yüklendi:
 
 file_path: Görüntü dosyasının tam yolu
@@ -61,7 +61,7 @@ class: Cilt lezyonunun sınıflandırması
 
 file_size_kb: Kilobyte cinsinden dosya boyutu
 
-1.3. Veri Özelliklerinin İncelenmesi
+# 1.3. Veri Özelliklerinin İncelenmesi
 
 Çözünürlük Analizi Sonuçları
 
@@ -83,9 +83,9 @@ Ortalama: 350.436,44 KB
 
 Medyan: 260.719 KB
 
-2. Görüntü Yükleme ve Görselleştirme
+# 2. Görüntü Yükleme ve Görselleştirme
 
-2.1. Rastgele Görüntüler Seçme
+# 2.1. Rastgele Görüntüler Seçme
    
 Analiz için 9 rastgele görüntü seçildi:
 
@@ -103,7 +103,7 @@ Basal cell carcinoma: 1 görüntü
 
 <img width="753" height="1995" alt="загрузка (1)" src="https://github.com/user-attachments/assets/0e13b40a-2202-4e4e-a13a-ef806ea55562" />
 
-2.2. Rastgele Görüntülerin İstatistiksel Özellikleri
+# 2.2. Rastgele Görüntülerin İstatistiksel Özellikleri
 
 Her görüntü için RGB ve gri tonlamalı istatistikleri hesaplandı:
 
@@ -115,7 +115,7 @@ Görüntü 2: RGB Mean: 212.60, Grayscale Mean: 211.18
 
 Görüntü 3: RGB Mean: 146.20, Grayscale Mean: 140.99
 
-2.3. Histogram Çizimi (RGB + Grayscale)
+# 2.3. Histogram Çizimi (RGB + Grayscale)
 
 Tüm görüntüler için RGB ve gri tonlamalı histogramlar oluşturuldu:
 
@@ -141,11 +141,11 @@ Image 9: Orta ton ağırlıklı; yeşil kanal baskın
 
 <img width="1388" height="2492" alt="загрузка (38)" src="https://github.com/user-attachments/assets/bd2790d7-4063-48d1-9482-51ec1f03679c" />
 
-3. Görüntü İşleme ve İyileştirme
+# 3. Görüntü İşleme ve İyileştirme
 
 Bu bölümde, görüntü iyileştirme için üç yöntem ele alınmıştır: kontrast germe, histogram eşitleme ve gamma düzeltme. Bu yöntemler, cilt lezyonu görüntülerindeki detayların görünürlüğünü artırmak için hem RGB hem de gri tonlamalı görüntülere uygulanmıştır.
 
-3.1. Kontrast Germe (Stretching) İşlemi
+# 3.1. Kontrast Germe (Stretching) İşlemi
 
 Kontrast germe, piksel değerlerinin aralığını tüm mevcut [0, 255] aralığını kullanacak şekilde genişleten doğrusal bir dönüşümdür.
 
@@ -187,7 +187,7 @@ Kontrast Germe Sonuçları
 
 — Uygulaması ve hesaplaması basit
 
-3.2. Histogram Eşitleme (Histogram Equalization)
+# 3.2. Histogram Eşitleme (Histogram Equalization)
 
 Yöntem Açıklaması
 
@@ -232,7 +232,7 @@ Düzgün bölgelerde gürültüyü artırabilir
 <img width="1389" height="788" alt="загрузка (6)" src="https://github.com/user-attachments/assets/f862ae47-fa5e-46a4-bd2a-a07ba8960f7f" />
 
 
-3.3. Gamma Düzeltme (Gamma Correction)
+# 3.3. Gamma Düzeltme (Gamma Correction)
 
 Yöntem Açıklaması
 
@@ -277,17 +277,17 @@ Pozlama düzeltmesi için esnek bir yöntem
 
 <img width="1489" height="985" alt="загрузка (8)" src="https://github.com/user-attachments/assets/8feb9299-1dba-4576-b2c4-9f0ca3ce762e" />
 
-4. Gürültü Azaltma
+# 4. Gürültü Azaltma
 
 Bu bölümde, görüntülerdeki gürültüyü azaltmak ve görüntü kalitesini analiz etmek için iki farklı bulanıklaştırma yöntemi karşılaştırılmıştır: Medyan Bulanıklaştırma ve Gauss Bulanıklaştırma.
 
-4.1. Median Blur Uygulama 
+# 4.1. Median Blur Uygulama 
 
 Medyan bulanıklaştırma, doğrusal olmayan bir filtreleme yöntemidir. Her piksel değeri, komşu piksellerin medyan değeri ile değiştirilir.
 
 Uygulama
 
-# Farklı kernel boyutları ile medyan bulanıklaştırma
+Farklı kernel boyutları ile medyan bulanıklaştırma
 kernel_sizes = [3, 5, 7]
 
 for ksize in kernel_sizes:
@@ -323,7 +323,7 @@ Medyan Bulanıklaştırma Sonuçları
 
 <img width="1589" height="789" alt="загрузка (12)" src="https://github.com/user-attachments/assets/251c9ac6-5c4f-4227-861d-1c12337e52f5" />
 
-4.2. Gaussian Blur Uygulama 
+# 4.2. Gaussian Blur Uygulama 
 
 Gauss bulanıklaştırma, doğrusal bir filtreleme yöntemidir. Gaussian dağılımına dayalı ağırlıklı ortalama kullanır.
 
@@ -396,11 +396,11 @@ Original Edges (Orijinal Kenarlar): 1663 kenar pikseli, Median Blur Edges (Medya
 
 • Gaussian blur detay kaybına neden oluyor mu? Evet, görüntülere göre Gaussian Blur, hem RGB hem de Gri Tonlamalı görüntülerde detay kaybına neden olmuştur. Bu sonucu, özellikle "Comparison: Median vs Gaussian Blur (kernel=5) - Image 400" başlıklı görüntüye bakarak ve kenar tespiti sonuçlarını ("загрузка (16).png") dikkate alarak çıkarıyoruz.
 
-5. Döndürme ve Ayna Çevirme (Flipping)
+# 5. Döndürme ve Ayna Çevirme (Flipping)
 
 Bu bölümde, görüntü veri artırma (data augmentation) ve simetri analizi için döndürme ve ayna çevirme işlemleri uygulanmıştır. Bu teknikler, deri lezyonu görüntülerinin makine öğrenimi modellerinde daha iyi genelleme yapabilmesi için önemlidir.
 
-5.1. Rastgele Döndürme 
+# 5.1. Rastgele Döndürme 
 
 Görüntüler, merkez etrafında belirli açılarla saat yönünün tersine döndürülmüştür. Küçük açılı döndürmeler (0-10°), görüntü bilgisinin çoğunu korurken veri çeşitliliği sağlar.
 
@@ -467,7 +467,7 @@ Döndürme Analizi Sonuçları
 
 — Tıbbi önem: Deri lezyonları her yönde görünebilir
 
-5.2. Yatay Ayna Çevirme 
+# 5.2. Yatay Ayna Çevirme 
 
 Görüntüler dikey eksen etrafında ayna çevirme işlemine tabi tutulmuştur.
 
@@ -591,11 +591,11 @@ Birleşik Dönüşümlerin Avantajları:
 
 <img width="1589" height="737" alt="загрузка (23)" src="https://github.com/user-attachments/assets/535d25f7-b238-4386-972e-9504fdaacad0" />
 
-6. Frekans Alanında Filtreleme (FFT)
+# 6. Frekans Alanında Filtreleme (FFT)
 
 Bu bölümde, görüntü işleme tekniklerinden Fourier Dönüşümü ve frekans alanında filtreleme yöntemleri ele alınmıştır. FFT (Fast Fourier Transform), görüntülerin frekans bileşenlerini analiz etmek ve çeşitli filtreleme işlemleri uygulamak için kullanılmıştır.
 
-6.1. Fourier Dönüşümü 
+# 6.1. Fourier Dönüşümü 
 
 Fourier Dönüşümü, bir görüntüyü uzaysal alandan frekans alanına dönüştürerek, görüntünün farklı frekans bileşenlerini analiz etmemizi sağlar.
 
@@ -641,7 +641,7 @@ Fourier Dönüşümü Analizi
 
 — Yüksek frekanslar detayları ve kenarları temsil eder
 
-6.2. Alçak Geçiren Filtre Uygulama 
+# 6.2. Alçak Geçiren Filtre Uygulama 
 
 Alçak geçiren filtre, yüksek frekans bileşenlerini bastırarak görüntüyü yumuşatır. Dairesel maske kullanılarak frekans alanında filtreleme yapılır.
 
@@ -688,7 +688,7 @@ Alçak Geçiren Filtre Analizi
 
 — Yumuşatma için kullanışlı ancak kenar bilgisini kaybettirir
 
-6.3. Ters Fourier (Inverse FFT) 
+# 6.3. Ters Fourier (Inverse FFT) 
 
 Frekans alanında filtrelenmiş görüntüyü tekrar uzaysal alana dönüştürme işlemidir.
 
@@ -728,7 +728,7 @@ Ters FFT Analizi
 
 • Frekans alanında filtreleme = uzaysal alanda konvolüsyon
 
-6.4. Karşılaştırma 
+# 6.4. Karşılaştırma 
 
 <img width="752" height="276" alt="Снимок экрана 2025-11-26 155809" src="https://github.com/user-attachments/assets/bc162686-bd41-467f-8152-5006be4a4a70" />
 
@@ -760,7 +760,7 @@ Fark Analizi:
 
 _____________________________________________________________
 
-FFT Sonuçlarının Özel Olarak Yorumlanması
+# FFT Sonuçlarının Özel Olarak Yorumlanması
 
 Görüntü İşleme ve FFT analizi, verilen görsellerde bir görüntünün frekans bileşenlerini ayrıştırma, filtreleme ve yeniden yapılandırma sürecini göstermektedir. 
 
@@ -775,11 +775,11 @@ Görüntü İşleme ve FFT analizi, verilen görsellerde bir görüntünün frek
 5. Fark Analizi Yorumu: Fark analizi, uygulanan işlemlerin tutarlılığını kesinleştirir. Orijinal RGB'den Gri Tonlamaya dönüştürülen görüntü ile orijinal Gri Tonlamalı görüntü arasındaki farkın sıfır (ortalama 0.0000) olması, giriş verilerinin özdeş olduğunu kanıtlar. Aynı şekilde, bu iki farklı girişten elde edilen filtrelenmiş sonuçların farkının da sıfır (ortalama 0.0000) olması, tüm FFT Düşük Geçişli Filtreleme sürecinin, başlangıç gri tonlamalı verinin kaynağından bağımsız olarak mükemmel bir tutarlılıkla aynı sonuçları ürettiğini gösterir.
 
 
-7. Keskinleştirme ve Enterpolasyon
+# 7. Keskinleştirme ve Enterpolasyon
 
 Bu bölümde, görüntü keskinleştirme teknikleri ve enterpolasyon yöntemleri ele alınmıştır. Unsharp masking yöntemi ile görüntüler keskinleştirilmiş ve çeşitli enterpolasyon teknikleri ile görüntü boyutlandırma işlemleri gerçekleştirilmiştir.
 
-7.1. Unsharp Masking ile Keskinleştirme 
+# 7.1. Unsharp Masking ile Keskinleştirme 
 
 Unsharp masking, görüntülerdeki kenarları ve ince detayları vurgulamak için kullanılan bir keskinleştirme tekniğidir. Temel prensip, orijinal görüntüden bulanıklaştırılmış versiyonu çıkararak bir maske oluşturmak ve bu maskeyi ağırlıklı olarak orijinal görüntüye eklemektir.
 
@@ -851,7 +851,7 @@ Unsharp Masking Analizi
 
 — Amount parametresi keskinleştirme gücünü kontrol eder
 
-7.2. Bicubic Enterpolasyon 
+# 7.2. Bicubic Enterpolasyon 
 
 Görüntüleri 2x büyütmek için çeşitli enterpolasyon yöntemleri karşılaştırılmıştır. Bicubic enterpolasyon, kalite ve hız arasında iyi denge sağladığı için tıbbi görüntülerde önerilir.
 
