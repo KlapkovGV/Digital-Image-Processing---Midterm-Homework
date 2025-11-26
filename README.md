@@ -7,41 +7,35 @@ Dizüstü bilgisayarı Google Colab'da açmak için yukarıdaki simgeye tıklay�
 
 # 1. Veri Yükleme 
 
-Proje Genel Bakış
+**Proje Genel Bakış**
 
 Bu proje, 9 farklı cilt lezyonu sınıfı içeren bir cilt kanseri veri setinin analizini içermektedir. Veri seti Kaggle'dan kaynaklanmakta olup, analiz ve işleme için 2.357 tıbbi görüntü içermektedir.
 
-Veri Seti Bilgileri:
+**Veri Seti Bilgileri:**
 
-— Kaynak: Kaggle "skin-cancer9-classesisic" veri seti
+- Kaynak: Kaggle "skin-cancer9-classesisic" veri seti
 
-— Toplam Görüntü: 2.357
+- Toplam Görüntü: 2.357
 
-— Sınıflar: 9 farklı cilt lezyonu türü
+- Sınıflar: 9 farklı cilt lezyonu türü
 
-Sınıf Dağılımı / Sınıf Adı	Adet
 
-— pigmented benign keratosis	/ 478
-
-— melanoma	/ 454
-
-— basal cell carcinoma	/ 392
-
-— nevus	373
-
-— squamous cell carcinoma	/ 197
-
-— vascular lesion	/ 142
-
-— actinic keratosis	/ 130
-
-— dermatofibroma	/ 111
-
-— seborrheic keratosis	/ 80
+| Sınıf Dağılımı | Sınıf Adı	Adet |
+|-------------|------------|
+| pigmented benign keratosis | 478 |
+| melanoma | 454 |
+| basal cell carcinoma | 392 |
+| nevus | 373 |
+| squamous cell carcinoma | 197 |
+| vascular lesion | 142 |
+| actinic keratosis | 130 |
+| dermatofibroma | 111 |
+| seborrheic keratosis | 80 |
 
 # 1.1. Kütüphanelerin İçe Aktarılması 
 
-Kullanılan Kütüphaneler
+**Kullanılan Kütüphaneler**
+
 pandas, numpy - Veri manipülasyonu
 
 matplotlib, seaborn - Görselleştirme
@@ -53,7 +47,8 @@ pathlib, os - Dosya sistemi operasyonları
 kagglehub - Veri seti indirme
 
 # 1.2. Veri Setinin Yüklenmesi
-Veri seti başarıyla indirildi ve aşağıdaki yapıya sahip bir pandas DataFrame'e yüklendi:
+
+**Veri seti başarıyla indirildi ve aşağıdaki yapıya sahip bir pandas DataFrame'e yüklendi:**
 
 file_path: Görüntü dosyasının tam yolu
 
@@ -65,7 +60,7 @@ file_size_kb: Kilobyte cinsinden dosya boyutu
 
 # 1.3. Veri Özelliklerinin İncelenmesi
 
-Çözünürlük Analizi Sonuçları
+**Çözünürlük Analizi Sonuçları**
 
 Yükseklik: Min: 450px, Maks: 4.479px, Ortalama: 959.88px
 
@@ -89,11 +84,11 @@ Medyan: 260.719 KB
 
 # 2.1. Rastgele Görüntüler Seçme
    
-Analiz için 9 rastgele görüntü seçildi:
+**Analiz için 9 rastgele görüntü seçildi:**
 
-Seçilen Görüntüler: 400, 403, 399, 800, 1002, 2021, 20, 80, 693 indeksleri
+**Seçilen Görüntüler: 400, 403, 399, 800, 1002, 2021, 20, 80, 693 indeksleri**
 
-Sınıf Dağılımı:
+**Sınıf Dağılımı:**
 
 Pigmented benign keratosis: 3 görüntü
 
@@ -107,9 +102,9 @@ Basal cell carcinoma: 1 görüntü
 
 # 2.2. Rastgele Görüntülerin İstatistiksel Özellikleri
 
-Her görüntü için RGB ve gri tonlamalı istatistikleri hesaplandı:
+**Her görüntü için RGB ve gri tonlamalı istatistikleri hesaplandı:**
 
-İstatistikler:
+**İstatistikler:**
 
 Image 1: RGB İstatistiksel:Overall - Min: 0, Max: 255, Mean: 136.74, Std: 35.31
 
@@ -149,9 +144,9 @@ Image 9: Grayscale İstatistiksel:Overall - Min: 13, Max: 233,Mean: 128.43947219
 
 # 2.3. Histogram Çizimi (RGB + Grayscale)
 
-Tüm görüntüler için RGB ve gri tonlamalı histogramlar oluşturuldu:
+**Tüm görüntüler için RGB ve gri tonlamalı histogramlar oluşturuldu:**
 
-Histogram Analiz Özeti:
+**Histogram Analiz Özeti:**
 
 Image 1: Kırmızı orta-yüksek tonlarda (~150-200) daha baskın
 
@@ -175,7 +170,7 @@ Image 9: Orta ton ağırlıklı; yeşil kanal baskın
 
 # 3. Görüntü İşleme ve İyileştirme
 
-Bu raporda sunulan analiz,  "image_400" görseli üzerinden gerçekleştirilmiştir.
+**Bu raporda sunulan analiz,  "image_400" görseli üzerinden gerçekleştirilmiştir.**
 
 Bu bölümde, görüntü iyileştirme için üç yöntem ele alınmıştır: kontrast germe, histogram eşitleme ve gamma düzeltme. Bu yöntemler, cilt lezyonu görüntülerindeki detayların görünürlüğünü artırmak için hem RGB hem de gri tonlamalı görüntülere uygulanmıştır.
 
@@ -873,9 +868,9 @@ def unsharp_mask(image, kernel_size=(5, 5), sigma=1.0, amount=1.5, threshold=0):
 
 - Kenar geliştirme daha belirgin
 
-<img width="1589" height="1524" alt="загрузка (43)" src="https://github.com/user-attachments/assets/25d2d787-34d9-4a64-a993-bf3240a6ff96" />
+<img width="1589" height="1524" alt="загрузка (50)" src="https://github.com/user-attachments/assets/019d95e2-492a-4d73-b956-ca3aca7b0dc1" />
 
-<img width="1589" height="1524" alt="загрузка (44)" src="https://github.com/user-attachments/assets/d59e9196-a76c-4e3b-9d9c-392772376276" />
+<img width="1589" height="1524" alt="загрузка (51)" src="https://github.com/user-attachments/assets/9f01efa5-e180-43ce-b9a0-7e3a223a296e" />
 
 **İşlem Adımları:**
 
@@ -887,7 +882,7 @@ def unsharp_mask(image, kernel_size=(5, 5), sigma=1.0, amount=1.5, threshold=0):
 
 - Keskinleştirilmiş - Orijinal + (Amount × Mask)
 
-<img width="1389" height="985" alt="загрузка (45)" src="https://github.com/user-attachments/assets/7aa33cd1-a511-4362-bc7d-a98d29aeed2a" />
+<img width="1389" height="985" alt="загрузка (52)" src="https://github.com/user-attachments/assets/9cb09fa6-0caf-4786-9f8c-61d4fc42131a" />
 
 **Histogram Karşılaştırması**
 
@@ -925,45 +920,45 @@ Görüntüleri 2x büyütmek için çeşitli enterpolasyon yöntemleri karşıla
 
 1. Nearest Neighbor (En Yakın Komşu)
    
-• Hız: En hızlı
+   • Hız: En hızlı
 
-• Kalite: Düşük, bloklu artefaktlar
+   • Kalite: Düşük, bloklu artefaktlar
 
-• Avantaj: Keskin kenarları korur
+   • Avantaj: Keskin kenarları korur
 
-• Dezavantaj: Pikselleşme
+   • Dezavantaj: Pikselleşme
 
 2. Bilinear (Çift Doğrusal)
    
-• Hız: Hızlı
+   • Hız: Hızlı
 
-• Kalite: Orta, hafif bulanık
+   • Kalite: Orta, hafif bulanık
 
-• Avantaj: Yumuşak geçişler
+   • Avantaj: Yumuşak geçişler
 
-• Dezavantaj: Detay kaybı
+   • Dezavantaj: Detay kaybı
 
 3. Bicubic (Çift Kübik)
 
-• Hız: Orta
+   • Hız: Orta
 
-• Kalite: İyi, bilineardan daha yumuşak
+   •   Kalite: İyi, bilineardan daha yumuşak
 
-• Avantaj: İyi kalite/hız dengesi
+   • Avantaj: İyi kalite/hız dengesi
 
-• Dezavantaj: Bilineardan yavaş
+   • Dezavantaj: Bilineardan yavaş
 
 4. Lanczos
 
-• Hız: En yavaş
+   • Hız: En yavaş
 
-• Kalite: En iyi, en keskin
+   • Kalite: En iyi, en keskin
 
-• Avantaj: Maksimum kalite
+   • Avantaj: Maksimum kalite
 
-• Dezavantaj: Halkalama (ringing) artefaktları olabilir
+   • Dezavantaj: Halkalama (ringing) artefaktları olabilir
 
-• Büyütülmüş Gri: (900, 1200) → 1,080,000 piksel
+   • Büyütülmüş Gri: (900, 1200) → 1,080,000 piksel
 
 
 **400 Numaralı Görüntü Enterpolasyon Sonuçları**
@@ -984,9 +979,9 @@ Görüntüleri 2x büyütmek için çeşitli enterpolasyon yöntemleri karşıla
 
 — Bicubic önerilen yöntem olarak öne çıkmış
 
-<img width="1990" height="788" alt="загрузка (46)" src="https://github.com/user-attachments/assets/202c6819-770e-40ba-97c7-c184bac544d9" />
+<img width="1990" height="788" alt="загрузка (53)" src="https://github.com/user-attachments/assets/0631bc45-9642-4f29-bbdb-0490d6b1a6c4" />
 
-<img width="1990" height="788" alt="загрузка (47)" src="https://github.com/user-attachments/assets/d6505887-6d0d-487c-8ec5-c0501f6dbb7b" />
+<img width="1990" height="788" alt="загрузка (54)" src="https://github.com/user-attachments/assets/1e40b5c6-61fd-47fb-b505-a47277be2647" />
 
 **Enterpolasyon Yöntemleri Analizi**
 
@@ -1011,10 +1006,10 @@ def calculate_edge_density(image):
     edge_density = np.count_nonzero(edges) / edges.size
     return edge_density, edges
 ```
+<img width="471" height="114" alt="Снимок экрана 2025-11-26 203019" src="https://github.com/user-attachments/assets/e39109d3-04d2-4627-b94f-7e373e96d60c" />
 
-<img width="757" height="312" alt="Снимок экрана 2025-11-26 164511" src="https://github.com/user-attachments/assets/c2fd9cdc-a7e2-4a6f-9a74-da11ca6a7eff" />
+<img width="1189" height="978" alt="загрузка (55)" src="https://github.com/user-attachments/assets/a8221311-30a9-46d4-b500-70bbf09a63bd" />
 
-<img width="1189" height="978" alt="загрузка (48)" src="https://github.com/user-attachments/assets/cd2d6951-cd82-4c71-af66-90270fbaf90e" />
 
 **Kenar Koruma Analizi:**
 
@@ -1026,7 +1021,8 @@ def calculate_edge_density(image):
 
 **İşlem Hattı Görselleştirmesi**
 
-<img width="1489" height="921" alt="загрузка (49)" src="https://github.com/user-attachments/assets/aad82360-b0c6-4748-8ff4-2ceebc74c21f" />
+<img width="1489" height="921" alt="загрузка (56)" src="https://github.com/user-attachments/assets/659d92ad-53dc-4873-985d-4a7e570dce33" />
+
 
 **Tam İşlem Hattı:**
 
@@ -1048,7 +1044,7 @@ def calculate_edge_density(image):
 
 • Boyut: (459, 600) → (459, 600) → (900, 1200)
 
-<img width="736" height="376" alt="Снимок экрана 2025-11-26 164723" src="https://github.com/user-attachments/assets/b5d2c6bc-a710-42bc-925e-53a98b2fec93" />
+<img width="721" height="212" alt="Снимок экрана 2025-11-26 203328" src="https://github.com/user-attachments/assets/ea6d747e-6a45-43a6-95b4-67c32cb3e2ad" />
 
 
 
