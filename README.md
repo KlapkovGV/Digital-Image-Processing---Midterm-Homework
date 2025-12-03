@@ -299,6 +299,7 @@ Eşitleme sonrasında histogram, 0'dan 255'e kadar olan tüm aralık boyunca bel
 
 
 **Oluşturulan diğer görüntüler**
+
 <img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/dc55b8d7-2165-4f7c-83e6-427ff25949a0" />
 <img width="1390" height="788" alt="image" src="https://github.com/user-attachments/assets/08850317-520e-4312-8859-8bbb6d991820" />
 <img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/17ff81a3-59fb-488c-ac46-f53a605d7823" />
@@ -361,6 +362,7 @@ def gamma_correction(image, gamma):
 <img width="1489" height="985" alt="загрузка (8)" src="https://github.com/user-attachments/assets/8feb9299-1dba-4576-b2c4-9f0ca3ce762e" />
 
 **Oluşturulan diğer görüntüler**
+
 <img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/3051c2eb-af79-488d-86a4-c696812b83ab" />
 <img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/fcec04e9-95a3-445c-80bb-2c442c90c45b" />
 <img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/e9edcb78-6432-4f3a-a3a8-2a3d6f6719a7" />
@@ -429,6 +431,7 @@ for ksize in kernel_sizes:
 <img width="1589" height="789" alt="загрузка (12)" src="https://github.com/user-attachments/assets/251c9ac6-5c4f-4227-861d-1c12337e52f5" />
 
 **Oluşturulan diğer görüntüler**
+
 <img width="1590" height="789" alt="image" src="https://github.com/user-attachments/assets/d98f6529-d432-412f-a609-0a47be610b81" />
 <img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/c6d92b65-c96c-4311-9428-26e34601fec6" />
 <img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/3849ee26-4905-43d5-b81f-90d145b8a12b" />
@@ -530,10 +533,12 @@ Canny Kenar Tespiti Sonuçları:
 - Gauss Bulanıklaştırma: 713 kenar pikseli (%57.13 kayıp)
 
 <img width="1489" height="917" alt="загрузка (15)" src="https://github.com/user-attachments/assets/b0a11610-bb66-4d52-8573-51f026c0b179" />
-
 <img width="1489" height="457" alt="загрузка (16)" src="https://github.com/user-attachments/assets/93ae69ad-9881-421d-a894-840b6d02d8b9" />
 
+
 **Oluşturulan diğer görüntüler**
+
+
 <img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/ce0c63b5-5a4a-424c-9d49-5bae73d51c1d" />
 <img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/6bdea45b-0b63-4756-8d07-8b2227c11075" />
 <img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/d19ee1b1-bd23-4b51-90fd-4b0de29e19a8" />
@@ -552,8 +557,6 @@ Canny Kenar Tespiti Sonuçları:
 <img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/9a18df41-ef23-4cd4-8dcb-99abb562145f" />
 
 
-
-
 **Kalite Metrikleri Karşılaştırması**
 
 <img width="815" height="259" alt="Снимок экрана 2025-11-26 150957" src="https://github.com/user-attachments/assets/645c1f72-d722-474e-bc40-31a8dfeb2381" />
@@ -565,6 +568,8 @@ Original Edges (Orijinal Kenarlar): 1663 kenar pikseli, Median Blur Edges (Medya
 
 
 **Oluşturulan diğer görüntüler**
+
+
 <img width="476" height="161" alt="image" src="https://github.com/user-attachments/assets/f368d2a9-42f6-46e7-93b5-d4c6cfe68a65" />
 <img width="483" height="171" alt="image" src="https://github.com/user-attachments/assets/833287ea-73c2-4ef0-841e-a73e6a1e879c" />
 <img width="464" height="175" alt="image" src="https://github.com/user-attachments/assets/bf5b9637-cba6-47f5-a131-c7407c09d188" />
