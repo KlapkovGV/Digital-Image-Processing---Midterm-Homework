@@ -1,4 +1,4 @@
-<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/af5092b9-1129-4f6f-a83c-2207edeedf9f" /><img width="483" height="171" alt="image" src="https://github.com/user-attachments/assets/a91a2518-ba38-49d3-9032-ec1f84e580b7" /># Digital-Image-Processing - Midterm-Homework
+# Digital-Image-Processing - Midterm-Homework
 ISIC cilt lezyonu görüntülerine hem RGB (renkli) hem de gri tonlamalı görüntü işleme teknikleri uyguladım
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XDtg6OJkR6YLbwBhGW5SBiFx5eMifROF?usp=sharing)
