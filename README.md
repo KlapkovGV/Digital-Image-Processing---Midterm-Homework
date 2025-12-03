@@ -1,4 +1,4 @@
-# Digital-Image-Processing - Midterm-Homework
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/af5092b9-1129-4f6f-a83c-2207edeedf9f" /><img width="483" height="171" alt="image" src="https://github.com/user-attachments/assets/a91a2518-ba38-49d3-9032-ec1f84e580b7" /># Digital-Image-Processing - Midterm-Homework
 ISIC cilt lezyonu görüntülerine hem RGB (renkli) hem de gri tonlamalı görüntü işleme teknikleri uyguladım
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1XDtg6OJkR6YLbwBhGW5SBiFx5eMifROF?usp=sharing)
@@ -217,15 +217,41 @@ def contrast_stretching(image):
 
 <img width="1189" height="970" alt="загрузка (3)" src="https://github.com/user-attachments/assets/e629e717-4e81-46d3-996a-78f88b1871e4" />
 
-<img width="1389" height="788" alt="загрузка (37)" src="https://github.com/user-attachments/assets/86e2a5be-22a2-4824-8388-a5725bf3c750" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/3837d625-5727-4aad-b13f-fe72aef9ac61" />
+
 
 **Kontrast Germe Sonuçları**
 
-— Düşük kontrastlı görüntüler için etkili
+Kırmızı, Yeşil ve Mavi kanallarının histogramları, parlaklık aralığının (yaklaşık 50-200) orta bölümünde toplanmıştır. Kontrast germe işleminden sonra bu dağılım, 0 ila 255 arasındaki tam aralığa yaklaşacak şekilde önemli ölçüde genişlemiştir.
 
-— Piksel değer aralığını genişletirken histogram şeklini değiştirmez
+Gri tonlamalı görüntü histogramı da 80-200 arasında dar bir dağılım gösterirken, kontrast germe sonrası dağılım 0'dan 255'e kadar çok daha geniş bir aralığa yayılmıştır.
 
-— Uygulaması ve hesaplaması basit
+**Oluşturulan diğer görüntüler**
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/1e19effe-46a1-417f-ad64-f5300cb8bb7f" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/7399a2a5-0451-45a4-83b3-8f5c3734caf3" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/8793a702-92c0-45f3-aeb5-5de08d459d46" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/c8b339b1-1c8c-4f6c-a14f-735d21d4cecb" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/c14b26ec-dfb2-48ea-886a-49545a5cb249" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/43e9811a-a479-4b5b-9084-bd365c4c26a3" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/ff0cdcda-98ca-449f-8ca0-f542d855d420" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/df05e190-d24f-47b8-a773-23415e20492a" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/13ffa2fb-9f5c-4057-bc12-831d7f753172" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/cea40533-99a6-4f5c-abd2-e38232d2ff6b" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/2059c5fa-31f3-441e-8ad5-0aec79a644d9" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/0717ada9-7e33-4d2c-8091-314f4fe57d9b" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/b054a865-9125-4920-9efe-1e00c839c10d" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/cc0b5266-fbad-4630-9f17-9267ea4fb1a3" />
+
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/4c71e1d7-d7bd-4daf-be37-4c7c40971f31" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/bb07c288-aace-43c3-8620-bbbfb043e2aa" />
+
 
 # 3.2. Histogram Eşitleme (Histogram Equalization)
 
@@ -259,15 +285,36 @@ RGB görüntüler için, renk bilgisini korumak amacıyla YCrCb renk uzayına d�
 
 **Histogram Eşitleme Sonuçları**
 
-— Kontrast germeye göre daha agresif bir kontrast iyileştirme yöntemi
+RGB Histogram: Eşitleme (ekvalizasyon) uygulandıktan sonra parlaklık dağılımı çarpıcı biçimde değişti.
 
-— YCrCb dönüşümü ile RGB'de renklerin korunması
+Ana özellik: Kırmızı ve Yeşil kanalların histogramları çok düz (üniform) hale geldi ve neredeyse tüm 0 ila 255 aralığını kapladı.
 
-— Düzgün bölgelerde gürültüyü artırabilir
+Mavi kanalın kenarlarında (0 ve 255) önemli zirveler (pikler) bulunmakta olup, ortası da daha düz hale gelmiştir. 0 ve 255'teki yüksek zirveler, Mavi kanaldaki birçok pikselin tamamen siyaha veya tamamen beyaza dönüştürüldüğünü gösterir.
+
+Eşitleme sonrasında histogram, 0'dan 255'e kadar olan tüm aralık boyunca belirgin şekilde daha geniş ve daha üniform (düz) hale gelmiştir ki, bu da histogram eşitlemenin klasik bir sonucudur.
 
 <img width="1189" height="970" alt="загрузка (5)" src="https://github.com/user-attachments/assets/324c337f-fae9-4073-a76f-447499def099" />
-
 <img width="1389" height="788" alt="загрузка (6)" src="https://github.com/user-attachments/assets/f862ae47-fa5e-46a4-bd2a-a07ba8960f7f" />
+
+
+
+**Oluşturulan diğer görüntüler**
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/dc55b8d7-2165-4f7c-83e6-427ff25949a0" />
+<img width="1390" height="788" alt="image" src="https://github.com/user-attachments/assets/08850317-520e-4312-8859-8bbb6d991820" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/17ff81a3-59fb-488c-ac46-f53a605d7823" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/0532e86a-9060-4c18-99fc-bb8ef2a2087c" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/a7682b51-e55b-48e0-86a1-60f687c47a1a" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/8bf5fc32-e5fc-453f-9fc4-bcf44daa76ad" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/08a25593-e436-4f81-a1b8-2193210d958c" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/6e1b84ee-690a-4774-83cb-7c797bf21e82" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/4f1225b4-3d4f-46db-b80a-d4ac30ee0dae" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/152b0070-797b-464c-b4ee-7bff7ffe8e5b" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/14691eb4-7145-4105-8158-99685923dbf8" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/24695c9d-740d-4234-9b4d-fe38ecc9b364" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/aed32aac-46bd-430d-826c-c4cebff44e43" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/ab368eb0-fe32-483a-bfa0-81a9d16cd67e" />
+<img width="1189" height="970" alt="image" src="https://github.com/user-attachments/assets/9d265bf4-5ce2-4d2b-b9e8-d00bdfdd6ac1" />
+<img width="1389" height="788" alt="image" src="https://github.com/user-attachments/assets/34ea12c5-5826-4a3e-a43d-e3de344e1e05" />
 
 
 # 3.3. Gamma Düzeltme (Gamma Correction)
@@ -311,8 +358,27 @@ def gamma_correction(image, gamma):
 — Doğrusal olmayan dönüşüm özellikle orta tonları etkiler
 
 <img width="1489" height="985" alt="загрузка (7)" src="https://github.com/user-attachments/assets/c0c42e23-436e-4c15-b653-51d6d40ae788" />
-
 <img width="1489" height="985" alt="загрузка (8)" src="https://github.com/user-attachments/assets/8feb9299-1dba-4576-b2c4-9f0ca3ce762e" />
+
+**Oluşturulan diğer görüntüler**
+<img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/3051c2eb-af79-488d-86a4-c696812b83ab" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/fcec04e9-95a3-445c-80bb-2c442c90c45b" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/e9edcb78-6432-4f3a-a3a8-2a3d6f6719a7" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/de88a72e-47c2-4e4a-9cc9-1d61bca72c36" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/134b9b04-d7b0-4718-8276-413a63ff3e9a" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/b1793912-9853-49fa-a14f-fccaf7f15a55" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/60aef44a-a3e0-4ff1-8390-f1df53bd61a2" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/79dbebf9-3894-41e4-8c60-ff2a5ed5c45b" />
+<img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/f1399def-4c6e-41c1-9f16-817cc9f851d8" />
+<img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/e7aa5c05-e673-413b-bf84-9b6473d195c7" />
+<img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/2b855b29-d18c-4dfa-a5ee-fb29c086e930" />
+<img width="1490" height="985" alt="image" src="https://github.com/user-attachments/assets/a3915e6a-b28d-4ec6-af85-3e7ffd0c9445" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/10ca1f36-1483-4e65-ad8a-ea8a5943c33b" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/58de984a-80fb-48b5-8439-01e2fe801444" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/a233dba5-91eb-441d-978b-5a0788344ae6" />
+<img width="1489" height="985" alt="image" src="https://github.com/user-attachments/assets/b7014e1f-8acf-4f94-bc4d-34b9ad0ff664" />
+
+
 
 # 4. Gürültü Azaltma
 
@@ -362,6 +428,25 @@ for ksize in kernel_sizes:
 
 <img width="1589" height="789" alt="загрузка (12)" src="https://github.com/user-attachments/assets/251c9ac6-5c4f-4227-861d-1c12337e52f5" />
 
+**Oluşturulan diğer görüntüler**
+<img width="1590" height="789" alt="image" src="https://github.com/user-attachments/assets/d98f6529-d432-412f-a609-0a47be610b81" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/c6d92b65-c96c-4311-9428-26e34601fec6" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/3849ee26-4905-43d5-b81f-90d145b8a12b" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/2259b062-c4a4-423d-9e62-7a88f0136aba" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/3152bee5-21ec-4e0b-8ca5-0113ab36fa16" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/dfaa31ed-5443-4a41-b2ac-a710fead8df4" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/2d7393e9-4f9b-4736-a869-0cb4dfe91943" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/305ee441-bced-427e-9e02-278d878f16d0" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/bb129203-22ed-4fcd-b85e-68322e613e72" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/b98130d0-eec3-4b54-9494-78ca3476ac5f" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/c17c4ce3-e6dc-4065-8c5a-8fbeab973e3d" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/c07b159c-e08b-4a50-9dae-47aa29cf4d7d" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/dd440f89-8f6a-4280-a75f-050a3d739e77" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/778d45b1-319d-4aad-ba1f-7caed7dc3c55" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/ecd24fb8-e201-48af-860a-2aa251f6cbd7" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/caf2099e-6bd3-40e4-bd8e-a7c8c8b6f0c6" />
+
+
 # 4.2. Gaussian Blur Uygulama 
 
 Gauss bulanıklaştırma, doğrusal bir filtreleme yöntemidir. Gaussian dağılımına dayalı ağırlıklı ortalama kullanır.
@@ -406,6 +491,26 @@ for ksize in kernel_sizes_gauss:
 
 <img width="1589" height="789" alt="загрузка (14)" src="https://github.com/user-attachments/assets/36862a10-dfcb-4814-b678-e85a15c44ba7" />
 
+**Oluşturulan diğer görüntüler**
+
+<img width="1590" height="789" alt="image" src="https://github.com/user-attachments/assets/f0dd2b90-08a4-477c-b7a3-698e21819ab5" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/56ba7c8f-989a-4f62-a9c7-2d637d2ec631" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/4294d35b-5d77-4fd5-9e88-8bb6c2c1e7d6" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/94c7ff0c-e90b-4eba-a399-63ff3b436757" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/4306d9a7-68f0-4355-bd5b-d1b8012170c4" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/73b5036f-fd85-4269-a987-1033f74bcafa" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/e7757df9-2dfd-4178-9bc7-9608166d31ce" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/63c581c2-3bb9-4621-b331-df786a557628" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/51bb4176-8a4c-43bf-99d3-149456cadd76" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/ffa2da4b-084e-4071-bd14-26844dade302" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/7158fd78-3b01-4568-8b0c-c0a6690e2fa9" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/38cb7533-0a7d-4cad-a400-0a0fd619b79f" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/9b8fee9a-c9c2-4bfe-a0b7-003c37d3301f" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/4d2579f9-e243-4528-819a-3ca27ac1dce9" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/a5398d01-c211-48c6-899a-9444184ef4c7" />
+<img width="1589" height="789" alt="image" src="https://github.com/user-attachments/assets/b180dd22-d271-43c2-b7c7-e09091543b5c" />
+
+
 # Karşılaştırmalı Analiz: Medyan vs Gauss
 
 **Görsel Karşılaştırma (Kernel=5)**
@@ -428,6 +533,27 @@ Canny Kenar Tespiti Sonuçları:
 
 <img width="1489" height="457" alt="загрузка (16)" src="https://github.com/user-attachments/assets/93ae69ad-9881-421d-a894-840b6d02d8b9" />
 
+**Oluşturulan diğer görüntüler**
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/ce0c63b5-5a4a-424c-9d49-5bae73d51c1d" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/6bdea45b-0b63-4756-8d07-8b2227c11075" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/d19ee1b1-bd23-4b51-90fd-4b0de29e19a8" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/256fde67-5368-481d-bd0d-d6e9780f1738" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/a438d13c-4eb2-4b82-84bb-14710048ae84" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/0f4b8b02-7ad0-4790-8837-96265a0e6516" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/c4aa4f44-7387-4ab4-b777-a9b9aa749395" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/d1fb0552-02f2-49f0-8c88-df4ae75769fc" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/b9553bf3-6ff0-4f65-8d97-68ac20a517f1" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/f7454f53-02f3-449a-8719-76c38a15ed60" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/bf2f23b0-6c0a-4453-bf51-4be8690b8cf4" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/178f9d48-27ff-4833-80d1-99455f1c7eef" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/0a51b49e-0254-4e82-bc31-2e1d2fc933fb" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/de9b9bdf-6219-4df0-ab9c-2f4632ba2b5f" />
+<img width="1489" height="917" alt="image" src="https://github.com/user-attachments/assets/f92ec902-ab3e-4474-b371-397f1a5d5c12" />
+<img width="1489" height="457" alt="image" src="https://github.com/user-attachments/assets/9a18df41-ef23-4cd4-8dcb-99abb562145f" />
+
+
+
+
 **Kalite Metrikleri Karşılaştırması**
 
 <img width="815" height="259" alt="Снимок экрана 2025-11-26 150957" src="https://github.com/user-attachments/assets/645c1f72-d722-474e-bc40-31a8dfeb2381" />
@@ -436,6 +562,19 @@ Canny Kenar Tespiti Sonuçları:
 Original Edges (Orijinal Kenarlar): 1663 kenar pikseli, Median Blur Edges (Medyan Bulanıklık Kenarları): 687 kenar pikseli, Gaussian Blur Edges (Gauss Bulanıklık Kenarları): 713 kenar pikseli.
 
 • Gaussian blur detay kaybına neden oluyor mu? Evet, görüntülere göre Gaussian Blur, hem RGB hem de Gri Tonlamalı görüntülerde detay kaybına neden olmuştur. Bu sonucu, özellikle "Comparison: Median vs Gaussian Blur (kernel=5) - Image 400" başlıklı görüntüye bakarak ve kenar tespiti sonuçlarını ("загрузка (16).png") dikkate alarak çıkarıyoruz.
+
+
+**Oluşturulan diğer görüntüler**
+<img width="476" height="161" alt="image" src="https://github.com/user-attachments/assets/f368d2a9-42f6-46e7-93b5-d4c6cfe68a65" />
+<img width="483" height="171" alt="image" src="https://github.com/user-attachments/assets/833287ea-73c2-4ef0-841e-a73e6a1e879c" />
+<img width="464" height="175" alt="image" src="https://github.com/user-attachments/assets/bf5b9637-cba6-47f5-a131-c7407c09d188" />
+<img width="461" height="173" alt="image" src="https://github.com/user-attachments/assets/b8cb2559-bcf3-4b11-b9d6-1cc6f64e65f7" />
+<img width="458" height="176" alt="image" src="https://github.com/user-attachments/assets/cac0ffda-34b2-4c7b-a796-27a52d6c3be5" />
+<img width="454" height="171" alt="image" src="https://github.com/user-attachments/assets/ed88d937-ef49-4070-83e9-6f735c814653" />
+<img width="428" height="170" alt="image" src="https://github.com/user-attachments/assets/7a47bbe1-4ce5-414b-b794-1757ef8a67ba" />
+<img width="458" height="173" alt="image" src="https://github.com/user-attachments/assets/ec82125f-0db7-41ee-95ab-0f6e91bee8bc" />
+
+
 
 # 5. Döndürme ve Ayna Çevirme (Flipping)
 
