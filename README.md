@@ -654,6 +654,34 @@ def rotate_image(image, angle):
 
 - Tıbbi önem: Deri lezyonları her yönde görünebilir
 
+
+**Oluşturulan diğer görüntüler**
+<img width="1790" height="690" alt="image" src="https://github.com/user-attachments/assets/19fc9281-20e8-455f-a50b-7462f1b6e547" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/ee87e409-f1d6-4d4e-a85e-d75ebd1b748f" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/59e69510-734b-4cfb-9977-c63e8c44a105" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/15b713e1-6aa2-45c4-8738-879979f4afc2" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/9b3939e9-abd7-43d9-9beb-71c7c4da6b2a" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/74d8a759-6373-4618-837e-8f3159413bc9" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/a8408ab5-99cb-459a-a244-f9f913e6727d" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/378086dc-6f46-4611-b665-26e2a3f53a77" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/030c414a-8777-482d-981c-1b114bce6f3f" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/095616cb-b168-483d-a770-cf3b8e365ea6" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/fcae1809-1076-4040-80ff-8dfc5ef976a5" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/ed8080a0-8da2-4185-b054-436c4ab8a385" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/07c7169e-313f-48d6-8686-7f8098ac0f33" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/45cbcd6b-5c20-47cc-9316-bbd5c006e6f2" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/7a26824e-4a84-4889-8124-3516a0d3526f" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/e4dd508b-adaa-4f70-8faf-242d08862a89" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/99e46042-4149-4519-a9b2-68ace2248aa9" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/61cc7fc6-f4c0-4e63-a11c-504562366c9c" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/21c8572e-ee52-42ce-968f-d2cbbfce3467" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/c3eef541-909a-4904-8f15-529025b8580d" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/6addf54d-35cb-4d4e-91dd-de416290ee14" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/42a4c740-62b4-4b2d-92b0-f362c927815c" />
+<img width="1789" height="690" alt="image" src="https://github.com/user-attachments/assets/5be90277-ce67-4c16-aa68-3b3a155db59e" />
+<img width="1789" height="623" alt="image" src="https://github.com/user-attachments/assets/122222cd-aa80-4847-bc0a-27b362b9be3b" />
+
+
 # 5.2. Yatay Ayna Çevirme 
 
 Görüntüler dikey eksen etrafında ayna çevirme işlemine tabi tutulmuştur.
@@ -700,6 +728,25 @@ img_gray_flipped = cv2.flip(img_gray_original, 1)
 - Uzamsal düzen değişir ancak istatistiksel özellikler değişmez
 
 - Tıbbi görüntülemede veri artırma için önemli
+
+
+**Oluşturulan diğer görüntüler**
+
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/4fd6ced4-23ec-467b-a4d9-d69c72528f21" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/d265d294-d9a4-4649-aa55-f1f27d0ce11d" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/05e5cb6d-bd02-4837-a9cd-9ed279a86ea6" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/e503f228-f110-490d-807f-a2010065306f" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/00113387-6803-4e17-bf40-855225c0275e" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/1f3d0b2d-bbc8-48fe-962c-64324d78d2e2" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/4c2374c3-94e5-4614-8289-04e8a3cbc405" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/cc7cb939-a39d-4e1e-b739-10a037facabc" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/7945b0b4-618e-4ca1-bac7-270189514103" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/e68d4fbf-fb52-4be5-bada-6c9b8316009a" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/a299569e-1c9e-4a58-8495-268ab1732bfa" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/94c1928a-5562-4f93-a0a9-0a3b3045c6e9" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/61f34463-32c0-4fdb-8659-b8cba80a0225" />
+<img width="1589" height="788" alt="image" src="https://github.com/user-attachments/assets/1b57575a-ab52-4be3-a936-6c4550be28a6" />
+<img width="1589" height="741" alt="image" src="https://github.com/user-attachments/assets/11ffe4d9-c707-4f0f-b855-ea2f8bca17b2" />
 
 # Simetri Analizi (Symmetry Analysis)
 
@@ -750,6 +797,19 @@ def analyze_symmetry(original, flipped):
 
 - Yüksek simetri skorları, lezyonun asimetrik doğasını doğrular
 
+**Oluşturulan diğer görüntüler**
+
+
+<img width="1489" height="973" alt="image" src="https://github.com/user-attachments/assets/cd34c2a6-b5e5-41cd-ac8e-c64f13e833fb" />
+<img width="1489" height="972" alt="image" src="https://github.com/user-attachments/assets/678dd1fd-7ac2-4d8e-b331-6a9b6b0cd740" />
+<img width="1489" height="972" alt="image" src="https://github.com/user-attachments/assets/a68ac22a-41e1-4e24-ab58-1a39d70843b4" />
+<img width="1489" height="972" alt="image" src="https://github.com/user-attachments/assets/5ab3d21c-5227-4ced-bbff-91fe5bb592fd" />
+<img width="1489" height="972" alt="image" src="https://github.com/user-attachments/assets/81ecc909-48e4-4862-a4ac-a1a6375792c6" />
+<img width="1489" height="973" alt="image" src="https://github.com/user-attachments/assets/4c31703d-7830-4156-86f6-03bb51f06efd" />
+<img width="1489" height="972" alt="image" src="https://github.com/user-attachments/assets/489f80d0-b5db-4d14-92fa-0d265501ec42" />
+
+
+
 # Birleşik Dönüşümler (Combined Transformations)
 
 Döndürme ve çevirme işlemleri birleştirilerek daha karmaşık veri artırma teknikleri gösterilmiştir.
@@ -781,6 +841,19 @@ Döndürme ve çevirme işlemleri birleştirilerek daha karmaşık veri artırma
 - Overfitting'in azaltılması
 
 <img width="1589" height="737" alt="загрузка (23)" src="https://github.com/user-attachments/assets/535d25f7-b238-4386-972e-9504fdaacad0" />
+
+
+**Oluşturulan diğer görüntüler**
+
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/5a6e9af8-1bbe-481b-be6b-536d8a6eece8" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/3a58bc4d-d3f8-4eea-bd47-a9c2b512e6c8" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/09995f62-3592-425c-bacf-2b525428c0ae" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/49a95d0f-f3ac-40ae-b7f5-f2ca2a326034" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/87a9b8bb-c692-4f57-91f8-0ca090532c26" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/38c47ace-deba-4512-bbeb-59e6f42f74d4" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/be92e3d9-ba61-48d6-b34d-978eb978b69d" />
+<img width="1589" height="737" alt="image" src="https://github.com/user-attachments/assets/1a63c3d1-e0d0-46db-b46f-1eb91941f050" />
+
 
 # 6. Frekans Alanında Filtreleme (FFT)
 
